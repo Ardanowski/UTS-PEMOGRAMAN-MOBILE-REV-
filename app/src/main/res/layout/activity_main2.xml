@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:background="#4C8BC5">
+
+        <ImageView
+            android:id="@+id/tombolback"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/back2" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/ic_baseline_contact_support_24" />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="420dp"
+        android:src="@drawable/fotoprofil"
+        android:layout_below="@id/logos"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/welcomeback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-410dp"
+        android:text="Welcome Back!"
+        android:textSize="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/logos"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/s" />
+
+    <TextView
+        android:id="@+id/winduardan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeback"
+        android:layout_centerHorizontal="true"
+        android:text="Ardanowski"
+        android:textSize="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/winduardan"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:padding="20dp"
+        android:text="Favorite"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/oren"
+        android:layout_marginLeft="10dp"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:background="@drawable/background"
+        android:backgroundTint="#EDB21A"
+        android:layout_below="@id/favorite">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/adidasjamaica" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:background="@drawable/background"
+        android:backgroundTint="#1AED88"
+        android:layout_below="@id/favorite">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/spezial" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/order"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oren"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:text="Order List"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="387dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/order"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/background"
+        android:backgroundTint="#4C8BC5">
+
+        <ImageView
+            android:id="@+id/dompet"
+            android:layout_width="30dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="23dp"
+            android:src="@drawable/dompet" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_warehouse_24"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="70dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/delivery"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="72dp"
+            android:src="@drawable/delivery"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="43dp"
+            android:src="@drawable/ic_baseline_credit_score_24"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"
+        android:layout_marginLeft="43dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Pay" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"
+        android:layout_marginLeft="131dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Packed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"
+        android:layout_marginLeft="230dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Delivery" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"
+        android:layout_marginLeft="340dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Rate" />
+
+
+
+</RelativeLayout>

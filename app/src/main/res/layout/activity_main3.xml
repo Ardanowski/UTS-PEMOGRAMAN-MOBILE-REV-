@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:background="#4C8BC5">
+
+        <ImageView
+            android:id="@+id/tombolmenu"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/ic_baseline_contact_support_24" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logos"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/s" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ardanowski"
+        android:layout_below="@id/logos"
+        android:text="Hi,Ardanowski"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:typeface="sans"
+        android:layout_marginTop="7dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="89dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/akun" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:src="@drawable/rectangle_2"
+        android:layout_below="@+id/ardanowski"
+        android:onClick="profile"
+        android:layout_marginTop="8dp"
+        android:id="@+id/oval"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bag"
+        android:id="@+id/bag"
+        android:layout_marginTop="87dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apa yang kamu cari sekarang?"
+        android:id="@+id/cari"
+        android:layout_below="@id/ardanowski"
+        android:layout_marginTop="9dp"
+        android:textSize="12dp"
+        android:layout_marginLeft="63dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/bag"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="97dp"
+        android:src="@drawable/search"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_below="@id/oval"
+        android:layout_marginTop="25dp"
+        android:id="@+id/jersey"
+        android:src="@drawable/fiorentina"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vintagejersey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/oval"
+        android:layout_marginTop="78dp"
+        android:id="@+id/vintage"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop Now"
+        android:onClick="shopnowjersey"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/vintage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/jacket"
+        android:layout_below="@id/button2"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vintagejacket"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/jaket"
+        android:layout_below="@id/button2"
+        android:layout_marginTop="78dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop Now"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/jaket"
+        android:onClick="shopnowjaket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/manchester2"
+        android:layout_below="@id/button3"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shoes2"
+        android:id="@+id/tulissepatu"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/black"
+        android:text="Shop Now"
+        android:onClick="shopnowshoes"/>
+
+
+</RelativeLayout>

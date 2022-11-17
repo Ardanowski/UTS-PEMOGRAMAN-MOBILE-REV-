@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#4C8BC5"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/SOUTH"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/s"/>
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SOUTH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="WELCOME TO SOUTH!"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register here to login your account"
+        android:layout_below="@id/Welcome"
+        android:layout_centerHorizontal="true"
+        android:typeface="sans"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/firstname"
+        android:layout_marginTop="-26dp"
+        android:paddingLeft="30dp"
+        android:typeface="sans"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Name" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/Register"
+        android:layout_marginTop="48dp"
+        android:layout_marginHorizontal="18dp"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:hint="Enter Your Full Name"
+        android:inputType="textPersonName"
+        android:background="@drawable/rectangle_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/firstname"
+        android:layout_marginTop="66dp"
+        android:paddingLeft="30dp"
+        android:typeface="sans"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Email" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/Register"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="138dp"
+        android:background="@drawable/rectangle_2"
+        android:hint="Enter Your Email "
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/Register"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/rectangle_2"
+        android:hint="Create Your Password"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/firstname"
+        android:layout_marginTop="156dp"
+        android:paddingLeft="30dp"
+        android:typeface="sans"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Password" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/Register"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="318dp"
+        android:background="@drawable/rectangle_2"
+        android:textColor="@color/black"
+        android:hint="Re-Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/firstname"
+        android:layout_marginTop="246dp"
+        android:paddingLeft="30dp"
+        android:typeface="sans"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Re-Password" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_below="@id/repassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="create"/>
+
+
+</RelativeLayout>
